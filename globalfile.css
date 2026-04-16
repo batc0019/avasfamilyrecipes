@@ -1,0 +1,241 @@
+/* Ava's Family Recipes CSS file */
+
+/* Color palette:
+Dusty rose - #A8684E
+Rust red - #A44021
+Charcoal - #30261D
+Brown - #C18640
+Light green - #817F32
+Ivy green - #363B1A
+Light brown - #69331D
+Red brown - #51210D
+Vanilla - #FFE7C2 */
+
+/* Kitchen tile background and main body text font*/
+body { font-family: corbel, georgia, sans-serif;
+       font-size: 12px;
+       line-height: 1.5;
+       margin: 0;
+       padding: 0;
+       color: #30261D;
+       background: url(images/kitchentile.png); }
+
+/* Heading font */
+h1 { font-family: "segoe script", arial, sans-serif;
+     font-size: 45px;
+     line-height: 1.5;
+     margin: 0;
+     padding: 0; }
+
+/* Visible heading font */
+h2 { font-family: "segoe script", arial, sans-serif;
+     font-size: 36px;
+     line-height: 1.5;
+     margin: 0;
+     padding: 0; }
+
+h1, h2, h3, h4, h5, h6 { font-family: "segoe script", arial, sans-serif;
+	     		 font-weight: bold; }
+
+h1 { font-size: 100%;
+     font-weight: normal; }
+
+h2 { font-size: 200%; }
+
+h3, h4, h5, h6 { font-size: 180%; }
+
+p, h1, h2, h3, h4, h5, h6, ol, ul { margin-top: 0;
+				    margin-bottom: 10px; }
+
+p { font-size: 125%; }
+
+ul, ol { padding-left: 0;
+         margin-left: 30px;
+	 font-size: 125%; }
+
+a { color: #51210D;
+    font-weight: bold;
+    text-decoration: none;
+    padding-bottom: 1px; }
+
+a:hover, a:focus, a:active, section a:visited:hover { color: #817F32; }
+
+section a:visited { color: #A8684E; }
+
+abbr { text-decoration: none;
+       color: #A44021; }
+
+div#wrapper { width: 728px;
+	      margin-left: auto;
+	      margin-right: auto;
+	      margin-top: 20px;
+	      margin-bottom: 20px;
+	      background-color: #FFE7C2;
+	      background-repeat: repeat-y;
+	      background-position: left top;
+	      background-attachment: scroll;
+	      border: 1px solid #C18640; }
+
+header { height: 120px;
+	 margin-top: 5px;
+	 margin-bottom: 0px; }
+
+header h1, header p { text-indent: -99999999px; }
+
+/* Header banner setup */
+header { background: url(images/logo_transparent.png) 215px no-repeat;
+         background-size: 300px; }
+
+article { width: 500px;
+	  padding: 30px; }
+  
+nav { font-family: castellar, sans-serif, arial;
+      font-size: 120%;
+      display: flex;
+      background-color: #C18640;
+      width: 728px; }
+
+footer { font-family: castellar, sans-serif, arial;
+	 font-weight: bold;
+	 padding: 10px;
+ 	 font-size: 75%;
+	 height: 1%;
+	 background-color: #96621D;
+	 color: #FFE7C2;
+	 clear: both; }
+
+footer p { margin-bottom: 0; }
+
+footer a:link { color: #FFE7C2;
+		text-decoration: underline; }
+
+footer a:hover, footer a:focus, footer a:active { background-color: transparent; }
+
+/* This is the setup for the horizontal nav bar */
+nav ul { position: sticky;
+	 list-style-type: none;
+	 margin-top: 0px;
+	 padding: 0px;
+	 display: flex;
+	 justify-content: center;
+	 margin: auto; }
+
+nav a { display: block;
+	text-align: center;
+	padding: 6px 24px; }
+
+nav a:hover { background-color: #A8684E;
+	      color: #FFE7C2; }
+
+.dropdown { position: relative; }
+
+/* This is what the dropdown button looks like! */
+.dropbtn { font-family: castellar, sans-serif, arial;
+           font-size: 100%;
+	   color: #51210D;
+    	   font-weight: bold;
+           display: flex;
+	   padding: 6px 24px;
+           background-color: #C18640;
+	   border: none; }
+
+/* Content in the dropdown menu */
+.dropdown-content { display: none;
+		    position: absolute;
+		    background-color: #A8684E;
+		    min-width: 150px;
+		    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); }
+
+/* Links for dropdown menu */
+.dropdown-content a { font-family: castellar, sans-serif, arial;
+ 		      font-size: 80%;
+		      color: #51210D;
+		      font-weight: bold;
+		      display: flex;
+		      padding: 6px 24px;
+		      background-color: #C18640;
+		      border: none; }
+
+.dropdown-content a:hover { background-color: #A8684E; }
+
+.dropdown:hover .dropdown-content { display: block; }
+
+.dropdown:hover .dropbtn { background-color: #A8684E; }
+
+/*This dictates how the tables will look */
+caption, thead { display: none; }
+
+tbody { font-family: corbel, georgia, sans-serif;
+	font-size: 125%; }
+
+/* Home page display */
+
+.home img { display: block;
+      border: 6px solid #51210D; }
+
+.home p { display: block;
+	  margin-right: 150px;
+	  text-align: justify; }
+
+/* About page display */
+.about img { display: block;
+	     margin-left: 180px;
+	     margin-top: -530px;
+	     border: 6px solid #51210D; }
+
+.about p { display: block;
+	   margin-right: 150px;
+	   text-align: justify; }
+
+.about h3 { font-size: 175%;
+	    margin-left: 230px;
+	    padding-bottom: 90px; }
+
+/* Contact page display */
+.contact p { margin-right: 150px;
+	     text-align: justify; }
+
+.contact img { margin-left: 450px;
+	       margin-top: -220px;
+	       margin-bottom: 40px;
+	       border: none; }
+
+/* Recipe 1 & 2 page display */
+.recipe1 h2, .recipe2 h2 { font-family: constantia, sans-serif, arial;
+			   text-decoration: dashed underline;
+			   text-decoration-color: #817F32;
+			   color: #51210D; }
+
+.recipe1 p, .recipe2 p, .recipe1 ol, .recipe2 ol, .recipe1 table, .recipe2 table { margin-right: 180px;
+										   text-align: justify; }
+
+div#pie1 { width: 225px;
+	   height: 304px;
+	   margin-left: 420px;
+	   margin-right: auto;
+	   margin-top: -3000px;
+	   margin-bottom: auto;
+	   display: block; }
+
+div#pie2 { width: 225px;
+	   height: 304px;
+	   margin-left: 380px;
+	   margin-right: auto;
+	   margin-top: 60px;
+	   margin-bottom: auto;
+	   display: block; }
+
+div#pie3 { width: 225px;
+	   height: 304px;
+	   margin-left: 430px;
+	   margin-right: auto;
+	   margin-top: 60px;
+	   margin-bottom: 1950px;
+	   display: block; }
+
+.recipe1 td, .recipe2 td { padding-right: 8px; }
+
+.recipe2 img { float: left;
+	       margin-left: 400px;
+	       margin-top: -1150px;
+	       margin-bottom: 40px }
